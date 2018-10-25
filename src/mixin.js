@@ -10,6 +10,14 @@ const defaultConfig = {
 export const installMixin = (config = defaultConfig) => ({
   create () {
     if (!this.$options.name) return
-    this[config.methodName] = createGenerator
+    const conf = {
+      ...defaultConfig,
+      ...config,
+      prefix: {
+        ...defaultConfig.prefix,
+        ...config.prefix,
+      },
+    }
+    this[config.methodName] = createGenerator(conf)
   },
 })
