@@ -36,7 +36,5 @@
     "standard-version": "^4.4.0",
     "tyu": "^1.0.6"
   },
-  "dependencies": {
-    "camelcase": "^5.0.0"
-  }
+  "dependencies": {}
 }
