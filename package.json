@@ -1,6 +1,6 @@
 {
   "name": "vue-module-class-generator",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Vue class helper",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
