@@ -8,7 +8,7 @@ const defaultConfig = {
   },
 }
 export const installMixin = (config = defaultConfig) => ({
-  create () {
+  created () {
     if (!this.$options.name) return
     const conf = {
       ...defaultConfig,
