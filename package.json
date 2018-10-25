@@ -1,6 +1,6 @@
 {
   "name": "vue-module-class-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue class helper",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -8,7 +8,13 @@
   "scripts": {
     "test": "tyu",
     "test:watch": "tyu -- --watch",
-    "build": "bili"
+    "build": "bili",
+    "release": "standard-version -a"
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "yarn build && git add ."
+    }
   },
   "author": {
     "name": "Nikita Nafranets",
@@ -27,6 +33,7 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "rollup-plugin-clear": "^2.0.7",
+    "standard-version": "^4.4.0",
     "tyu": "^1.0.6"
   },
   "dependencies": {
