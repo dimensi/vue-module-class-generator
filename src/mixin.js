@@ -18,6 +18,6 @@ export const installMixin = (config = defaultConfig) => ({
         ...config.prefix,
       },
     }
-    this[config.methodName] = createGenerator(conf)
+    this[conf.methodName] = createGenerator(conf)
   },
 })
