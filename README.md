@@ -93,15 +93,15 @@ export default {
 `prefix.mod: string` - set prefix to boolean mode
 ```js
 // prefix.mod = 'is'
-c('element', { active: true }) // ['element', $style.isActive]
+c($style.element, { active: true }) // [$style.element, $style.isActive]
 // prefix.mod = ''
-c('element', { active: true }) // ['element', $style.active]
+c($style.element, { active: true }) // [$style.element, $style.active]
 ```
 
 `prefix.modKey: string` - set prefix to key mode
 ```js
 // prefix.modKey = 'is'
-c('element', { color: 'red' }) // ['element', $style.colorIsRed]
+c($style.element, { color: 'red' }) // [$style.element, $style.colorIsRed]
 // prefix.modKey = ''
-c('element', { color: 'red' }) // ['element', $style.colorRed]
+c($style.element, { color: 'red' }) // [$style.element, $style.colorRed]
 ```
