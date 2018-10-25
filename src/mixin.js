@@ -1,7 +1,15 @@
 import { createGenerator } from './generator'
 
-export const installMixin = (config) => ({
+const defaultConfig = {
+  methodName: 'c',
+  prefix: {
+    mod: '',
+    modKey: '',
+  },
+}
+export const installMixin = (config = defaultConfig) => ({
   create () {
+    if (!this.$options.name) return
     this[config.methodName] = createGenerator
   },
 })
