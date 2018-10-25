@@ -1,0 +1,35 @@
+{
+  "name": "vue-module-class-generator",
+  "version": "0.1.0",
+  "description": "Vue class helper",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "repository": "git@github.com:dimensi/vue-module-class-generator.git",
+  "scripts": {
+    "test": "tyu",
+    "test:watch": "tyu -- --watch",
+    "build": "bili"
+  },
+  "author": {
+    "name": "Nikita Nafranets",
+    "email": "eddimensi@gmail.com"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "bili": "^3.1.2",
+    "eslint": "^5.7.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "rollup-plugin-clear": "^2.0.7",
+    "tyu": "^1.0.6"
+  },
+  "dependencies": {
+    "camelcase": "^5.0.0"
+  }
+}
